@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "for Atvinta",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss_watch": "node-sass -w assets/scss/ -o assets/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aglaina/Test_Atvinta.git"
+  },
+  "author": "Makarova J/I",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aglaina/Test_Atvinta/issues"
+  },
+  "homepage": "https://github.com/Aglaina/Test_Atvinta#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
