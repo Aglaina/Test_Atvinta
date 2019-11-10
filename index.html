@@ -1,22 +1,57 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Фабрика человечков</title>
-  <style>
-   body {
-    height: 1600px;
-   background-image: -webkit-linear-gradient(top, #07031F 12%, #1D398F 100%);
-   }
-  </style>
-   </head>
- <body>
- 	<style>
- 		p{
- 				color: 	#000000
- 				font-size: 100em;
- 		}
- 	</style>
-  <center><p>Фабрика человечков</p></center>
- </body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Фабрика человечков</title>
+
+    <!--<style>
+     body {
+      height: 1600px;
+     background-image: -webkit-linear-gradient(top, #07031F 12%, #1D398F 100%);
+     }
+    </style>-->
+    <script>
+        function AddCoin(contaier) {
+
+            var counter = document.getElementById('coinCounter').firstChild;
+            var count = Number(counter.nodeValue);
+            if (count < 100) {
+                contaier.innerHTML += '<div class="coin"></div>';
+                counter.nodeValue = Number(counter.nodeValue) + 1;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="root">
+        <div class="wrapper">
+            <div class="title">«Фабрика человечков»</div>
+            <div class="titleBlock">Копилка</div>
+            <div class="Block">
+                <div class="coinBox" id="coinBox">
+                    <div class="coin"></div>
+                </div>
+                <div class="coinCount" id="coinCounter">1</div>
+                <div class="coinAddButton" onclick="AddCoin(coinBox)">Добавить одну монету</div>
+            </div>
+            <div class="titleBlock">Рынок ингридиентов</div>
+            <div class="Block">
+                1
+            </div>
+            <div class="titleBlock">Ингридиенты в мешке</div>
+            <div class="Block">
+                1
+            </div>
+            <div class="titleBlock">Производство человечка</div>
+            <div class="Block">
+1
+            </div>
+
+        </div>
+    </div>
+
+</body>
 </html>
+
+

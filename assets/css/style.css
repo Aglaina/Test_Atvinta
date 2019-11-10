@@ -1,8 +1,80 @@
-.content-navigation {
-  border-color: #3bbfce;
-  color: #2ca2af; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.border {
-  padding: 9px;
-  margin: 9px;
-  border-color: #3bbfce; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: sans-serif; }
+
+.wrapper {
+  font: 14px sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#063964), to(#020D18));
+  background: -webkit-linear-gradient(bottom, #063964, #020D18);
+  background: -o-linear-gradient(bottom, #063964, #020D18);
+  background: linear-gradient(to top, #063964, #020D18);
+  min-width: 410px; }
+
+.title {
+  padding-top: 47px;
+  padding-bottom: 49px;
+  font: 700 36px sans-serif;
+  color: white;
+  font-weight: bold;
+  /*line-height: 0.458;*/
+  text-align: center;
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.75); }
+
+.titleBlock {
+  text-align: center;
+  color: #798c9d;
+  font: 700 26px sans-serif; }
+  .titleBlock span {
+    margin: 0 8px;
+    position: relative;
+    text-decoration: none;
+    text-align: center; }
+
+.Block {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.coin {
+  background-image: url(../../assets/img/coin.png);
+  width: 24px;
+  height: 30px;
+  margin-left: -19px; }
+
+.coinBox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 16px;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.coinCount {
+  font: 12px sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px; }
+
+.coinAddButton {
+  font: 12px sans-serif;
+  color: #fff;
+  margin-top: 16px;
+  margin: 16px auto 0;
+  padding-bottom: 1px;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
+  max-width: 130px;
+  cursor: default; }
